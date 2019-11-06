@@ -1,0 +1,398 @@
+* {margin: 0; padding: 0; outline: none; box-sizing: border-box; font-size: 100%; font-family: 'Open Sans', sans-serif;}
+body {background-color: #f1f1f1;}
+nav, ul {list-style-type: none;}
+a {text-decoration: none;}
+img {max-width: 100%;}
+button {cursor: pointer;}
+
+.top-bar {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 0px rgba(185,186,189,1);
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+}
+
+.top-search {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.btn-logo {
+    display: flex;
+}
+
+.logo {
+    width: 95px;
+    height: 50px;
+    background-image: url(../img/yt-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-menu {
+    border: 0;
+    background-color: transparent;  
+    padding: 10px 12px 12px 12px;
+    font-size: 1.6em;
+    float: left;
+    color: #666;
+    display: none;
+}
+
+.form-search {
+    width: 50%;
+    max-width: 750px;
+    margin-left: 20px;
+}
+
+.form-search input {
+    width: 85%;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px 0 0 5px;
+    padding: 8px 14px;
+    float: left;
+    border-right: 0;
+    display: flex;
+}
+
+.btn-search {
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 0 4px 4px 0;
+    padding: 8px 12px;
+    float: left;
+    border-left: 0;
+    color: red;
+}
+
+.person-icons {
+    display: flex;
+}
+
+.person-icons button {
+    margin-right: 40px;
+}
+
+.btn {
+    border: 0;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: #666;
+}
+
+.btn:hover {
+    color: #111;
+}
+
+.btn-upload {
+    border: 0;
+    color: red;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid red;
+}
+
+.btn-upload:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.profile-config {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+    background-image: url(../img/usr0812.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-nav {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    background-color: none;
+    display: flex;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.main-nav li {
+    padding: .70rem;
+}
+
+.main-nav li a {
+    color: #333;
+    font-family: 'roboto', sans-serif;
+    padding: .70rem;
+}
+
+.main-nav li a:hover {
+    border-bottom: 2px solid red;
+    color: #111;
+}
+
+/* Helpers */
+
+.active {
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: flex;
+    position: absolute;
+    margin-top: 115px;
+}
+
+.center-content {
+    max-width: 1050px;
+    width: 90%;
+    height: auto;
+    background-color: none;
+    padding: 14px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.left-bar {
+    width: 240px;
+    height: auto;
+    background-color: none;
+    margin: 0px 5px 0px 0;
+    position: relative;
+}
+
+.left-bar ul {
+    margin-bottom: 5px;
+}
+
+.left-bar li a {
+    width: 100%;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 10px 10px 4px;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.left-bar li a:hover {
+    background-color: #f9f9f9;
+}
+
+.left-bar i {
+    color: red;
+    font-weight: bold;
+    padding: 0 14px 0 10px;
+}
+
+.left-bar-active {
+    color: red;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border: 1px solid #ebebeb;
+}
+
+.left-bar span {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4px;
+    color: #444;
+}
+
+.container-card {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.header-content {
+    width: 100%;
+    height: 300px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.items-card {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-card h1 {
+    font-size: 1.2em;
+    padding: 12px 0px;
+    color: #333;
+}
+
+.content-card {
+    width: 100%;
+    height: 200px;
+    background-color: none;
+    display: flex;
+    border-radius: 4px; 
+}
+
+.main-card:first-child {
+    width: auto;
+    height: auto;
+    flex-grow: 3;
+    background-color: #e1e1e1;
+    margin-right: 20px;
+}
+
+.main-card:last-child {
+    width: auto;
+    height: auto;
+    flex-grow: 2;
+    background-color: #e1e1e1;   
+}
+
+.col-card {
+    width: 100%;
+    height: 100px;
+    background: none;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.col-card:last-child {
+    border-bottom: 0;
+}
+
+
+
+.topic-title {
+    width: 20%;
+    height: auto;
+    background: red;
+}
+
+.card {
+    width: 100%;
+    height: 190px;
+    background-color: #e1e1e1;
+    margin: 5px 10px;
+}
+
+@media screen and (max-width: 410px) {
+
+    .top-search {
+        padding: 10px 6px 6px 6px;
+    }
+    
+    .main-nav, .profile-config {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo {
+        width: 45px;
+        height: 45px;
+        background-image: url(../img/yt-mobile-logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .person-icons:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .form-search input, .btn-search {
+        display: none;
+    }
+
+    .btn-upload {
+        display: none;
+    }
+
+    .btn-menu:hover {
+        color: #111;
+    }
+
+    .mobile-btn {
+        border: 0;
+        font-size: 1.4rem;
+        background-color: transparent;
+        color: #666;
+        display: inline-block;
+    }
+
+    .mobile-btn:hover {
+        color: #111;
+    }
+
+    .center-content {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main-nav, .left-bar {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+        padding: 12px 10px;
+        font-size: 1.5em;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .main-container {
+        margin-top: 65px;
+    }
+}
